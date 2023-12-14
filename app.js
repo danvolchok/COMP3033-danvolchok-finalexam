@@ -4,6 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Mongo DB package
+var mongoose = require('mongoose')
+var configs = require("./config/globals")
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
