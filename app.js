@@ -122,7 +122,7 @@ var options = {
                         rating: {
                           type: 'number',
                           description: 'Restaurant rating'
-                        },
+                        }
                       }
                     }
                   }
