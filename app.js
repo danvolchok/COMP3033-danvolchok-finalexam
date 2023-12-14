@@ -8,6 +8,19 @@ var logger = require('morgan');
 var mongoose = require('mongoose')
 var configs = require("./config/globals")
 
+// Authentication package
+var passport = require('passport');
+var BasicStrategy = require('passport-http').BasicStrategy;
+
+// CORS package; fixes fetch error in SwaggerUI
+var cors = require('cors');
+
+// API documentation package
+var SwaggerUI = require('swagger-ui-express');
+
+// API documentation from comments
+var swaggerJSDoc = require('swagger-jsdoc');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
